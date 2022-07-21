@@ -59,5 +59,11 @@ spring:
           predicates:
             - Path=/order-service/**
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
+
 #token:
 #  secret: user_token
