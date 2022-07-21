@@ -26,6 +26,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
 
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     compileOnly 'org.projectlombok:lombok'
@@ -34,10 +37,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'javax.validation:validation-api:2.0.1.Final'
-    implementation 'org.modelmapper:modelmapper:2.3.8'
-
-    compileOnly('io.jsonwebtoken:jjwt-api:0.11.1')
-    runtimeOnly('io.jsonwebtoken:jjwt-impl:0.11.1', 'io.jsonwebtoken:jjwt-jackson:0.11.1')
+    implementation 'org.modelmapper:modelmapper:3.0.0'
 
 }
 

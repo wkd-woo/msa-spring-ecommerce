@@ -26,7 +26,7 @@ public class GlobalFilter extends AbstractGatewayFilterFactory<GlobalFilter.Conf
             if (config.isPreLogger()) {
                 log.info("Global Filter Start: request id -> {}", request.getId());
             }
-            return chain.filter(exchange).then(Mono.fromRunnable(()->{
+            return chain.filter(exchange).then(Mono.fromRunnable(() -> {
                 if (config.isPostLogger()) {
                     log.info("Global Filter End: response code -> {}", response.getStatusCode());
                 }
