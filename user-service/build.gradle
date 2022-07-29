@@ -37,7 +37,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'javax.validation:validation-api:2.0.1.Final'
     implementation 'org.modelmapper:modelmapper:3.0.0'
-    implementation 'org.springfraemwork.cloud:spring-cloud-starter-bus-amqp'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp:2.4.5'
 }
 
 dependencyManagement {
